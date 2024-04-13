@@ -149,6 +149,7 @@
   --ltn__secondary-color: #26595D;
   --ltn__secondary-color-2: #059ea9;
   --color-universal-gold: #DCA947;
+  --color-universal-gold-tint: #f3bc57;
   /* Darken */
   --ltn__secondary-color-3: #fb412a;
   /* Lighten */
@@ -458,6 +459,34 @@ ol li {
   transform: translateX(-100%);
 }
 
+.project-btn {
+  background-color: var(--color-universal-gold) ;
+  color: #fff;
+  border: none;
+  border-radius: 16px; 
+  padding: 20px 45px; 
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color:var(--color-universal-gold-tint);
+  color: var(--white);
+}
+
+.project-btn a:hover {
+  background-color:var(--color-universal-gold-tint);
+  color: var(--white);
+}
+
+.project-btn span{
+  margin-right: 5px; 
+}
+
+.center-side {
+  transform: translateX(230%);
+}
 
 .section-title {
   font-family: "Urbanist", sans-serif;
@@ -6188,8 +6217,26 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-weight: 700; 
 }
 
-.ltn__slide-item-inner h1,p {
+.text-paragraph {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.about-img {
+  border-radius: 20px;
+}
+
+.about-img2 {
+  width: 30rem;
+}
+
+.ltn__slide-item-inner h1,.banner-p {
   color: white !important;
+}
+
+.site-logo img {
+  width: 5rem;
 }
 
 /* Slider Animation Start */
