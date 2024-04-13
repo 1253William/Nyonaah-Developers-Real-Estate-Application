@@ -1,9 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
-/*
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* ====================================================
     Gutter Code 
 ==================================================== */
@@ -150,6 +148,7 @@ font-family: 'Poppins', sans-serif;
   /* Lighten */
   --ltn__secondary-color: #26595D;
   --ltn__secondary-color-2: #059ea9;
+  --color-universal-gold: #DCA947;
   /* Darken */
   --ltn__secondary-color-3: #fb412a;
   /* Lighten */
@@ -289,7 +288,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  font-family: var(--ltn__body-font);
+  font-family: "Urbanist", sans-serif;
   line-height: 1.8;
   margin: 0 auto; }
 
@@ -419,20 +418,52 @@ ol li {
 .contact-btn {
     color: #fff; /* Text color */
     border: none;
-    border-radius: 5px; /* Adjust border radius as needed */
+    border-radius: 12px; /* Adjust border radius as needed */
     padding: 30px 40px; /* Adjust padding as needed */
     font-size: 16px; /* Adjust font size as needed */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-
-
 .contact-btn span {
     margin-right: 5px; /* Adjust spacing between text and icon as needed */
 }
 
+.banner-btn {
+  background-color: var(--ltn__secondary-color) ;
+  color: #fff;
+  border: none;
+  border-radius: 16px; 
+  padding: 20px 45px; 
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.banner-btn:hover {
+  background-color:var(--ltn__secondary-color-2);
+  color: var(--white);
+}
+
+.banner-btn a:hover {
+  background-color:var(--ltn__secondary-color-2);
+  color: var(--white);
+}
+
+.banner-btn span{
+  margin-right: 5px; 
+}
+
+.right-side {
+  transform: translateX(-100%);
+}
+
+
+.section-title {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
 
 .section-bg-2,
 .section-bg-6,
@@ -1347,7 +1378,7 @@ ul {
     .slick-dots li button {
       display: none; }
     .slick-dots li:hover, .slick-dots li.slick-active {
-      background-color: var(--ltn__secondary-color);
+      background-color: var(--color-universal-gold);
       height: 15px;
       width: 15px;
       margin-bottom: -2px; }
@@ -4170,7 +4201,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: inline-block; }
   .header-top-btn  {
     display: inline-block;
-    padding: 0 20px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: 27px ;
+    padding-right: 27px;
     line-height: 40px;
     background-color: var(--ltn__secondary-color);
     color: var(--white); }
@@ -4178,6 +4212,22 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       background-color: var(--ltn__secondary-color-2); }
       .header-top-btn a:hover {
         color: var(--white); }
+
+ .header-top-btn-2 {
+          display: inline-block; }
+ .header-top-btn-2  {
+            display: inline-block;
+            padding-top: 10px ;
+            padding-bottom: 10px;
+            padding-left: 27px ;
+            padding-right: 27px;
+            line-height: 40px;
+            background-color: var(--ltn__secondary-color);
+            color: var(--white); }
+ .header-top-btn-2:hover {
+              background-color: var(--ltn__secondary-color-2); }
+  .header-top-btn-2 a:hover {
+                color: var(--white); }        
 /* ----------------------------------------------
     Header Middle Area
 ---------------------------------------------- */
@@ -4307,6 +4357,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__main-menu ul {
   margin-bottom: 0; }
 
+.main-menu-nav {
+   border: 2px solid var(--ltn__secondary-color);
+   border-radius: 50px;
+}  
+
+
 .ltn__main-menu > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4331,13 +4387,24 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .ltn__main-menu > ul > li > a {
   font-size: 18px;
-  padding: 20px 10px;
+  padding: 20px 20px;
   display: inline-block;
   white-space: nowrap;
   color: var(--ltn__heading-color);
   font-weight: 600;
   font-family: var(--ltn__body-font); }
 
+.home {
+  margin-left: 30px;
+}
+
+.media {
+  margin-right: 50px;
+}
+
+.ltn__main-menu > ul > li a.active {
+    color:var(--color-universal-gold) /* Active button text color */
+}
 .ltn__main-menu li:hover > a {
   color: var(--ltn__secondary-color); }
 
@@ -6205,6 +6272,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 /* Slide Arrow */
 .slick-slide-arrow-1 .slick-arrow {
+  background-color: var(--white-10);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -6216,9 +6284,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   height: 60px;
   line-height: 58px;
   border: 1px solid var(--border-color-1);
+  border-radius: 50%;
   text-align: center;
   font-size: 20px;
-  color: var(--ltn__primary-color) !important;
+  color: var(--color-universal-gold) !important;
   z-index: 1;
   opacity: 0;
   visibility: hidden; }
@@ -6986,7 +7055,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     transform: translate(50%); } }
 
 @media (max-width: 767px) {
-  .liton-slide-item-inner {
+  .lton-slide-item-inner {
     height: inherit; }
   .slide-item-info-inner {
     margin-bottom: 30px; }
@@ -7006,7 +7075,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .ltn__product-pointer {
     display: none; }
   .ltn__slide-item-6 .slide-title {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+ .right-side {
+      transform: none;
+  }   
+  
+  }
 
 /* Slide Image Show Only Mobile Device */
 /*
@@ -7297,11 +7372,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 /* product-item-4 */
 .ltn__product-item-4 {
+  padding: 30px;
   -webkit-box-shadow: var(--ltn__box-shadow-4);
   box-shadow: var(--ltn__box-shadow-4);
   border: 1px solid;
+  border-radius:32px;
   border-color: var(--border-color-13);
-  background-color: var(--white); }
+  background-color: var(--ltn__secondary-color);
+ }
   .ltn__product-item-4 .product-img {
     position: relative; }
     .ltn__product-item-4 .product-img a {
@@ -7309,7 +7387,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     .ltn__product-item-4 .product-img img {
       -webkit-transition: all 0.5s ease 0s;
       -o-transition: all 0.5s ease 0s;
-      transition: all 0.5s ease 0s; }
+      transition: all 0.5s ease 0s; 
+      border-radius: 20px;
+    }
   .ltn__product-item-4 .product-img-location-gallery {
     position: absolute;
     bottom: 0;
@@ -12196,6 +12276,21 @@ input.cart-plus-minus-box {
     transform: inherit; } }
 
 @media (max-width: 767px) {
+  .ltn__slider-area {
+    margin-top: 0px;
+    margin:0px;
+    border-radius: 0px;
+  }  
+  
+  .banner {
+    background-image: url('../img/13.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 44rem;
+    text-align: center;
+    color: #fff; 
+    padding: 100px 0;
+  }
   .custom-content-brief {
     margin-bottom: 30px; }
   .about-us-img-info {
