@@ -843,7 +843,8 @@ fieldset legend {
 
 .bg-white {
   background-color: var(--white) !important;
-  color: var(--black) !important; }
+  color: var(--black) !important;
+ }
 
 .bg-red {
   background-color: var(--red) !important;
@@ -9129,7 +9130,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  position: relative; }
+  position: relative; 
+  border-radius: 10px;
+}
 
 .ltn__feature-icon {
   margin-bottom: 20px;
