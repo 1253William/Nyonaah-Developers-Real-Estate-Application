@@ -150,6 +150,7 @@
   --ltn__secondary-color-2: #059ea9;
   --color-universal-gold: #DCA947;
   --color-universal-gold-tint: #f3bc57;
+  --color-footer: #F3EFEF;
   /* Darken */
   --ltn__secondary-color-3: #fb412a;
   /* Lighten */
@@ -497,7 +498,7 @@ ol li {
 .section-bg-2,
 .section-bg-6,
 .section-bg-7 {
-  background-color: var(--section-bg-2); }
+  background-color: var(--color-footer); }
   .section-bg-2 h1,
   .section-bg-2 h2,
   .section-bg-2 h3,
@@ -534,7 +535,7 @@ ol li {
   .section-bg-7 span,
   .section-bg-7 tr,
   .section-bg-7 td {
-    color: var(--white); }
+    color: var(--black); }
   .section-bg-2 .ltn__separate-line .separate-icon,
   .section-bg-6 .ltn__separate-line .separate-icon,
   .section-bg-7 .ltn__separate-line .separate-icon {
@@ -615,7 +616,7 @@ ol li {
   background-color: var(--section-bg-6); }
 
 .section-bg-7 {
-  background-color: var(--section-bg-7); }
+  background-color: var(--color-footer); }
 
 .text-color-white {
   color: var(--white); }
