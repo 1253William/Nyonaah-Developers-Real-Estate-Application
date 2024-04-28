@@ -155,6 +155,7 @@
   --ltn__secondary-color-3: #fb412a;
   /* Lighten */
   --ltn__heading-color: #071c1f;
+  --ltn__heading-title: #ffffff;
   --ltn__paragraph-color: #5C727D;
   --ltn__heading-font: 'Poppins', sans-serif;
   --ltn__body-font: 'Nunito Sans', sans-serif;
@@ -325,7 +326,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: var(--ltn__heading-color);
+  color: var(--ltn__heading-title);
   clear: both;
   font-family: var(--ltn__heading-font);
   font-weight: 700;
@@ -493,6 +494,10 @@ ol li {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
+}
+
+.home-why {
+  color: var(--ltn__primary-color);
 }
 
 .section-bg-2,
